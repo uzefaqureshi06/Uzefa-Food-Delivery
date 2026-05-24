@@ -29,6 +29,9 @@ app.get("/", (req, res) => {
   res.send("API Working");
 });
 
-// REMOVE app.listen()
+app.listen(port, () => {
+  console.log(`Server is running on http://localhost:${port}`);
+});
+
 
 export default app;
